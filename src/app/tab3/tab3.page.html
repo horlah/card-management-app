@@ -1,9 +1,41 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title slot="start" text-left>
+            Profile
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Your Details</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-item>
+                <ion-label position="floating">Full Name</ion-label>
+                <ion-input type="text" value="Kamiru Ajasa"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" value="kamiru@ajasa.com"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Gender</ion-label>
+                <ion-select placeholder="Select One">
+                    <ion-select-option value="f">Female</ion-select-option>
+                    <ion-select-option value="m">Male</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Mobile</ion-label>
+                <ion-input type="mobile" value="09012345678"></ion-input>
+            </ion-item>
+
+            <br>
+
+            <ion-button expand="block" margin-top (click)="updateProfile()">Update Profile!</ion-button>
+        </ion-card-content>
+    </ion-card>
+</ion-content>
