@@ -1,0 +1,35 @@
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: -6px;
+}
+
+.swiper-wrapper {
+    margin-bottom: 25px;
+}
+
+.swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+}
+
+.debit-card {
+	background: rgba(0, 0, 0, .7);
+	color: #fff;
+    height: 150px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+	&.swiper-slide-active {
+		background: #000;
+		width: 250px !important;
+        border-radius: 0px 12px 12px 0px;
+	}
+
+	&.swiper-slide-next {
+		margin-left: 20px;
+        border-radius: 12px 0px 0px 12px;
+        padding-left: 40px;
+	}
+}

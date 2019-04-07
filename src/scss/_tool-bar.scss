@@ -1,0 +1,12 @@
+ion-title.title-ios {
+    padding: 0px 12px;
+    font-size: 20px;
+    font-weight: 500;
+    position: initial;
+}
+
+ion-toolbar {
+    --border-width: 0 !important;
+    box-shadow: var(--ion-bar-shadow);
+    padding: var(--ion-bar-padding) !important;
+}
